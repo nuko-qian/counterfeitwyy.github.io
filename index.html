@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #ccc;
+    }
+
+    .box {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      /* border: 1px solid red; */
+      border-radius: 50%;
+      overflow: hidden;
+      animation: x 10s infinite linear;
+    }
+
+    @keyframes x {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .box :nth-child(1) {
+      width: 150px;
+      height: 300px;
+      background: black;
+    }
+
+    .box :nth-child(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 300px;
+      background: #fff;
+    }
+
+    .box :nth-child(3) {
+      position: absolute;
+      top: 0;
+      left: 75px;
+      width: 150px;
+      height: 150px;
+      background: black;
+      border-radius: 50%;
+    }
+
+    .box :nth-child(4) {
+      position: absolute;
+      bottom: 0;
+      left: 75px;
+      width: 150px;
+      height: 150px;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    .box :nth-child(5) {
+      position: absolute;
+      top: 60px;
+      left: 140px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 50%;
+    }
+
+    .box :nth-child(6) {
+      position: absolute;
+      bottom: 60px;
+      left: 140px;
+      width: 20px;
+      height: 20px;
+      background: black;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="r1"></div>
+    <div class="r2"></div>
+    <div class="r3"></div>
+    <div class="r4"></div>
+    <div class="r5"></div>
+    <div class="r6"></div>
+  </div>
+</body>
+
+</html>
